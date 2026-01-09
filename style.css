@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: "Segoe UI", monospace;
+    font-family: "Open Sans", monospace;
     background-color: var(--bg);
     color: var(--text);
     height: 100vh;
@@ -182,3 +182,4 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
+
