@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg: #0a0f1f;
+    --sidebar: #050814;
+    --panel: #0f172a;
+    --accent: #22d3ee;
+    --text: #e5e7eb;
+    --muted: #64748b;
+}
+
+body {
+    font-family: "Segoe UI", monospace;
+    background-color: var(--bg);
+    color: var(--text);
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: var(--sidebar);
+    padding: 30px 20px;
+    border-right: 1px solid #020617;
+}
+
+.sidebar h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: var(--accent);
+    line-height: 1.1;
+}
+
+.descricao {
+    margin: 15px 0 30px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.controles label {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.controles input,
+.controles select {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    background-color: var(--panel);
+    border: 1px solid #020617;
+    color: var(--text);
+    border-radius: 4px;
+}
+
+.controles button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controles button:hover {
+    background-color: var(--accent);
+    color: #020617;
+}
+.links-ataques {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.links-ataques p {
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.links-ataques a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #020617;
+    background-color: var(--panel);
+    color: var(--accent);
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.links-ataques a:hover {
+    background-color: var(--accent);
+    color: #020617;
+}
+
+.painel-principal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.topo {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.status {
+    font-size: 11px;
+    color: #22c55e;
+    border: 1px solid #22c55e;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.terminal {
+    flex: 1;
+    background-color: #020617;
+    border: 1px solid #020617;
+    padding: 20px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: #22c55e;
+    overflow-y: auto;
+}
+
+#resultado {
+    white-space: pre-line;
+}
+
+.conteudo-teoria {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.conteudo-teoria h1 {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.conteudo-teoria h2 {
+    margin-top: 20px;
+    color: #e0e7ff;
+}
+
+.conteudo-teoria p,
+.conteudo-teoria li {
+    color: #cbd5f5;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.conteudo-teoria ul {
+    margin-left: 20px;
+}
+
+.conteudo-teoria ol {
+    padding-left: 30px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: var(--accent);
+    color: #020617;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
