@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ataque por Rainbow Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="conteudo-teoria">
+
+    <h1>Ataque por Rainbow Table</h1>
+
+    <p>
+        O ataque por Rainbow Table é uma técnica utilizada para descobrir senhas
+        a partir de seus hashes, explorando tabelas previamente calculadas que
+        associam senhas comuns aos seus respectivos valores de hash.
+    </p>
+
+    <h2>Como funciona</h2>
+    <p>
+        Diferentemente de ataques como brute force ou dicionário, a Rainbow Table
+        não tenta adivinhar a senha em tempo real. O esforço computacional é feito
+        previamente, durante a geração da tabela.
+    </p>
+
+    <ol>
+        <li>O atacante gera uma lista de senhas comuns</li>
+        <li>Cada senha é transformada em hash</li>
+        <li>Esses hashes são armazenados em uma tabela</li>
+        <li>Durante o ataque, apenas ocorre a comparação de hashes</li>
+    </ol>
+
+    <h2>Por que o ataque é rápido</h2>
+    <p>
+        Como os hashes já foram calculados previamente, o ataque se resume a uma
+        busca na tabela. Isso torna o processo extremamente rápido quando comparado
+        a ataques de força bruta.
+    </p>
+
+    <h2>Limitações do ataque</h2>
+    <ul>
+        <li>Funciona apenas se a senha estiver presente na tabela</li>
+        <li>Depende de reutilização de senhas comuns</li>
+        <li>Não é eficaz contra senhas longas e únicas</li>
+    </ul>
+
+    <h2>Como se proteger</h2>
+    <ul>
+        <li>Uso de salt único por senha</li>
+        <li>Algoritmos de hash lentos (bcrypt, scrypt, Argon2)</li>
+        <li>Senhas fortes e exclusivas</li>
+    </ul>
+
+    <p>
+        No simulador, a Rainbow Table é representada por uma lista reduzida de
+        senhas comuns, permitindo visualizar o conceito sem riscos de segurança.
+    </p>
+
+    <a href="index.html" class="voltar">Voltar ao simulador</a>
+
+</div>
+
+</body>
+</html>
