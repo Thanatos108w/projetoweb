@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Attack Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid">
+
+    <aside class="sidebar">
+        <h1>Simulador de<br>Quebra de Senha</h1>
+        <p class="descricao">
+            Laboratório educacional de simulação de ataques a senhas
+        </p>
+
+        <div class="controles">
+            <label>Senha alvo</label>
+            <input type="password" id="senhaAlvo" placeholder="Senha simulada">
+
+            <label>Tipo de ataque</label>
+            <select id="tipoAtaque">
+                <option value="bruteforce">Brute Force</option>
+                <option value="dicionario">Dicionário</option>
+                <option value="mascara">Máscara</option>
+                <option value="hibrido">Híbrido</option>
+                <option value="rainbow">Rainbow Table</option>
+            </select>
+
+            <button onclick="iniciarAtaque()">Executar Ataque</button>
+            <div class="links-ataques">
+            <p>Ataques explicados:</p>
+
+                 <a href="bruteforce.html">Brute Force</a>
+                 <a href="dicionario.html">Dicionário</a>
+                 <a href="mascara.html">Máscara</a>
+                 <a href="hibrido.html">Híbrido</a>
+                 <a href="rainbow.html">Rainbow Table</a>
+</div>
+        </div>
+    </aside>
+
+    <main class="painel-principal">
+        <header class="topo">
+            <div id="status-sistema" class="status status-parado">
+                Status: Aguardando ação
+        </div>
+        </header>
+
+        <section class="terminal">
+            <div id="resultado">
+                &gt; Aguardando comando...
+            </div>
+        </section>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
